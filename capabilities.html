@@ -1,63 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Capabilities | Wisely Clean Government Services LLC</title>
+<meta name="description" content="Capability Statement for Wisely Clean Government Services LLC - Government and Municipal Janitorial Services." />
 
 <style>
+:root{
+--ink:#0b1220;
+--muted:#5a677a;
+--line:#e6e9ef;
+--bg:#ffffff;
+--soft:#f6f8fb;
+--card:#ffffff;
+--shadow: 0 10px 30px rgba(10,20,40,0.08);
+--radius: 16px;
+--max: 1080px;
+}
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
 body{
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 margin:0;
-padding:30px;
-color:#0b1220;
-background:#fff;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+color:var(--ink);
+background:var(--bg);
 line-height:1.55;
 }
+a{ color:inherit; text-decoration:none; }
+.wrap{ max-width:var(--max); margin:0 auto; padding:18px 20px; }
 
-a{text-decoration:none;color:inherit}
+header{
+position:sticky;
+top:0;
+z-index:50;
+background:#fff;
+border-bottom:1px solid var(--line);
+backdrop-filter:saturate(180%) blur(8px);
+}
+.topbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:16px;
+padding:10px 0;
+}
+.brand{
+display:flex;
+align-items:center;
+gap:14px;
+min-width: 260px;
+}
+/* ✅ logo 2× bigger */
+.brand img{ height:104px; width:auto; }
+.brandText strong{
+display:block;
+font-size:16px;
+font-weight:800;
+line-height:1.15;
+}
+.brandText span{
+display:block;
+font-size:13px;
+color:var(--muted);
+margin-top:4px;
+line-height:1.2;
+}
+nav.primary{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:flex-end;
+}
+.pill{
+display:inline-flex;
+align-items:center;
+border:1px solid var(--line);
+padding:8px 12px;
+border-radius:999px;
+font-size:14px;
+background:#fff;
+}
+.pill:hover{ border-color:#cfd6e3; }
 
-h1{font-size:32px}
+main{ padding: 8px 0 10px; }
+h1{
+margin:16px 0 10px;
+font-size:36px;
+letter-spacing:-0.7px;
+line-height:1.08;
+}
+.subtitle{
+color:var(--muted);
+max-width: 78ch;
+margin:0 0 18px;
+}
+
+section{ margin-bottom:40px; }
 h2{
+font-size:22px;
+margin: 22px 0 12px;
 border-bottom:2px solid #000;
 display:inline-block;
 padding-bottom:4px;
 }
-
-ul{padding-left:20px;color:#555}
-li{margin:6px 0}
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-margin-top:30px;
+ul{
+margin:0;
+padding-left:20px;
+color:var(--muted);
 }
+li{ margin:6px 0; }
 
+.grid2{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:20px;
+}
 .card{
-border:1px solid #e6e9ef;
-border-radius:14px;
+border:1px solid var(--line);
+border-radius:var(--radius);
+background:var(--card);
+box-shadow:var(--shadow);
 padding:20px;
 }
 
-@media(max-width:900px){
-.grid{grid-template-columns:1fr}
+.infoList li{
+color: var(--ink);
+font-weight:600;
+}
+.infoList li span{
+color: var(--muted);
+font-weight:500;
+}
+
+.actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top: 12px;
+}
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:10px 14px;
+border-radius:12px;
+border:1px solid var(--line);
+background:#fff;
+font-weight:700;
+font-size:14px;
+cursor:pointer;
+}
+.btn.primary{
+background: var(--ink);
+color:#fff;
+border-color: var(--ink);
+}
+.btn:hover{ border-color:#cfd6e3; }
+
+footer{
+border-top:1px solid var(--line);
+background:#fff;
+color:var(--muted);
+font-size:13px;
+}
+
+@media (max-width: 880px){
+nav.primary{ justify-content:flex-start; }
+.grid2{ grid-template-columns:1fr; }
+h1{ font-size:30px; }
+.brand img{ height:92px; }
 }
 </style>
 </head>
 
 <body>
+<header>
+<div class="wrap topbar">
+<div class="brand">
+<img src="./assets/logo.png" alt="Wisely Clean Government Services logo">
+<div class="brandText">
+<strong>Wisely Clean Government Services LLC</strong>
+<span>Government & Municipal Janitorial Services</span>
+</div>
+</div>
 
-<a href="index.html">← Back to Home</a>
+<!-- ✅ these links must match section ids on THIS page -->
+<nav class="primary" aria-label="Primary">
+<a class="pill" href="index.html">Home</a>
+<a class="pill" href="#top">Capabilities</a>
+<a class="pill" href="#company">Company Data</a>
+<a class="pill" href="#contact">Contact</a>
+</nav>
+</div>
+</header>
 
+<main class="wrap" id="top">
 <h1>Capability Statement</h1>
-
-<p>
-Wisely Clean Government Services LLC provides professional janitorial,
-sanitation, and facility cleaning services to federal, state,
-and local government agencies with a focus on compliance and reliability.
+<p class="subtitle">
+Wisely Clean Government Services LLC provides professional janitorial, sanitation, and facility cleaning services
+to federal, state, and local government agencies with a focus on reliability, compliance, and scalable delivery.
 </p>
 
+<div class="actions">
+<a class="btn primary" href="assets/WiselyClean-CapabilityStatement.pdf" target="_blank" rel="noopener">
+Download Capability Statement (PDF)
+</a>
+<a class="btn" href="index.html#contact">Request a Quote</a>
+</div>
+
+<section>
 <h2>Core Competencies</h2>
 <ul>
 <li>Government & Municipal Janitorial Services</li>
@@ -67,49 +219,72 @@ and local government agencies with a focus on compliance and reliability.
 <li>Scheduled & On-Demand Cleaning Contracts</li>
 <li>Post-Disaster & Emergency Facility Cleaning</li>
 </ul>
+</section>
 
+<section>
 <h2>Differentiators</h2>
 <ul>
 <li>Government-focused service delivery model</li>
 <li>Contract-ready operational structure</li>
 <li>Compliance-driven cleaning standards</li>
 <li>Scalable workforce capability</li>
-<li>Professional documentation & reporting</li>
+<li>Professional documentation and reporting</li>
 </ul>
+</section>
 
+<section>
 <h2>Past Performance</h2>
 <ul>
 <li>Commercial & Facility Cleaning Services</li>
 <li>Janitorial & Sanitation Support</li>
 <li>Office & Property Maintenance</li>
 </ul>
+<p class="subtitle" style="margin-top:10px;">References available upon request.</p>
+</section>
 
-<div class="grid">
-
+<!-- ✅ COMPANY DATA: id MUST be "company" for nav to work -->
+<section id="company" class="grid2">
 <div class="card">
-<h2>Company Data</h2>
-<ul>
-<li>Legal Entity: Wisely Clean Government Services LLC</li>
-<li>SAM.gov Status: Pending (In Review)</li>
-<li>UEI: Pending</li>
-<li>CAGE Code: Pending</li>
-<li>Primary NAICS: 561720 – Janitorial Services</li>
-<li>Additional NAICS: To be added upon SAM activation</li>
-<li>Service Area: Nationwide (U.S.)</li>
+<h2 style="margin-top:0;">Company Data</h2>
+<ul class="infoList">
+<li>Legal Entity: <span>Wisely Clean Government Services LLC</span></li>
+<li>SAM.gov Status: <span>Pending (In Review)</span></li>
+<li>UEI: <span>Pending</span></li>
+<li>CAGE Code: <span>Pending</span></li>
+<li>Primary NAICS: <span>561720 — Janitorial Services</span></li>
+<li>Additional NAICS: <span>To be added upon SAM activation</span></li>
+<li>Service Area: <span>Nationwide (U.S.)</span></li>
 </ul>
 </div>
 
-<div class="card">
-<h2>Contact Information</h2>
-<ul>
-<li>Phone: <a href="tel:+18102760948">810-276-0948</a></li>
-<li>Email: contracts@wiselycleangov.com</li>
-<li>Email: billing@wiselycleangov.com</li>
-<li>Website: wiselycleangov.com</li>
+<!-- ✅ CONTACT: id MUST be "contact" for nav to work -->
+<div class="card" id="contact">
+<h2 style="margin-top:0;">Contact Information</h2>
+<ul class="infoList">
+<li>Phone: <span>810-276-0948</span></li>
+<li>Email: <span>contracts@wiselycleangov.com</span></li>
+<li>Email: <span>billing@wiselycleangov.com</span></li>
+<li>Website: <span>wiselycleangov.com</span></li>
 </ul>
-</div>
 
+<div class="actions">
+<a class="btn primary" href="assets/WiselyClean-CapabilityStatement.pdf" target="_blank" rel="noopener">
+Download PDF
+</a>
+<a class="btn" href="index.html#contact">Back to Home Contact</a>
 </div>
+</div>
+</section>
+</main>
 
+<footer>
+<div class="wrap">
+© <span id="year"></span> Wisely Clean Government Services LLC · Capability Statement
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
