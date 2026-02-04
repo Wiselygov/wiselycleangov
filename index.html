@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Wisely Clean Government Services LLC</title>
-<meta name="description" content="Wisely Clean Government Services LLC provides janitorial, sanitation, and facility cleaning services for federal, state, and local agencies." />
+<meta name="description" content="Wisely Clean Government Services LLC provides janitorial, sanitation, facility support, and supply services for federal, state, and local agencies." />
 
 <style>
 :root{
@@ -18,7 +18,7 @@
 --btnInk:#fff;
 --radius:16px;
 --shadow: 0 10px 30px rgba(2,6,23,.08);
---max: 1080px;
+--max: 1100px;
 }
 *{box-sizing:border-box}
 body{
@@ -29,145 +29,137 @@ background:linear-gradient(180deg,#ffffff 0%, var(--bg) 100%);
 }
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
 header{
 position:sticky;top:0;z-index:10;
-background:rgba(255,255,255,.85);
+background:rgba(255,255,255,.9);
 backdrop-filter: blur(10px);
 border-bottom:1px solid var(--line);
 }
 .topbar{
 display:flex;align-items:center;justify-content:space-between;
-gap:14px;padding:14px 0;
+gap:14px;padding:14px 0;flex-wrap:wrap;
 }
-.brand{display:flex;align-items:center;gap:14px;min-width:280px}
+.brand{display:flex;align-items:center;gap:16px}
 .brand img{
-width:140px; /* BIGGER LOGO (2–4 sizes larger) */
+width:160px; /* BIG LOGO */
 height:auto;
 display:block;
 }
-.brand .text .name{
-margin:0;font-weight:800;letter-spacing:-.2px;font-size:18px;
+.brand .name{
+margin:0;font-weight:800;font-size:18px;
 }
-.brand .text .sub{
+.brand .sub{
 margin:2px 0 0;color:var(--muted);font-size:13px;
 }
-nav.primary{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-nav.primary a.pill{
-display:inline-block;text-decoration:none;
+nav.primary{display:flex;gap:10px;flex-wrap:wrap}
+nav.primary a{
+text-decoration:none;
 padding:10px 14px;border-radius:999px;
 border:1px solid var(--line);
-background:#fff;
-font-size:14px;
+background:#fff;font-size:14px;
 }
-nav.primary a.pill:hover{background:var(--pill)}
-main{padding:26px 0 60px}
-.hero{
-padding:26px 0 10px;
-}
-.heroGrid{
-display:grid;
-grid-template-columns: 1.25fr .75fr;
-gap:22px;
-align-items:start;
-}
+nav.primary a:hover{background:var(--pill)}
+
+main{padding:28px 0 60px}
+
 h1{
 margin:0 0 12px;
 font-size:42px;
 line-height:1.05;
 letter-spacing:-1px;
 }
-.lead{color:var(--muted);font-size:16px;line-height:1.6;max-width:70ch;margin:0 0 18px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:14px 0 8px}
+.lead{
+color:var(--muted);
+font-size:16px;
+line-height:1.6;
+max-width:80ch;
+}
+
+.hero{
+display:grid;
+grid-template-columns: 1.25fr .75fr;
+gap:22px;
+align-items:start;
+}
+
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
 .btn{
-display:inline-flex;align-items:center;gap:10px;
-padding:12px 16px;border-radius:12px;
+display:inline-flex;align-items:center;
+padding:12px 18px;border-radius:12px;
 background:var(--btn);color:var(--btnInk);
-text-decoration:none;border:1px solid rgba(0,0,0,.08);
-box-shadow: var(--shadow);
-font-weight:650;
+text-decoration:none;font-weight:650;
+border:1px solid rgba(0,0,0,.08);
+box-shadow:var(--shadow);
 }
 .btn.secondary{
 background:#fff;color:var(--ink);
-box-shadow:none;border:1px solid var(--line);
-}
-.btn:hover{opacity:.95}
-.heroCard{
-background:var(--card);
 border:1px solid var(--line);
-border-radius:var(--radius);
-padding:18px;
-box-shadow: var(--shadow);
-}
-.heroCard h3{margin:0 0 10px;font-size:14px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
-.meta{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.meta li{
-display:flex;justify-content:space-between;gap:14px;
-padding:10px 12px;border:1px solid var(--line);
-border-radius:12px;background:#fff;
-font-size:14px;
-}
-.meta strong{color:var(--muted);font-weight:700}
-.meta span{font-weight:700}
-.chipRow{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 0}
-.chip{
-display:inline-flex;align-items:center;
-border:1px solid var(--line);
-background:#fff;border-radius:999px;
-padding:8px 12px;font-size:13px;color:var(--muted)
+box-shadow:none;
 }
 
-section{margin-top:34px}
-.sectionTitle{margin:0 0 10px;font-size:22px;display:inline-block;border-bottom:2px solid #111;padding-bottom:4px}
-.sectionDesc{margin:0 0 14px;color:var(--muted);line-height:1.6;max-width:85ch}
-
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .card{
 background:var(--card);
 border:1px solid var(--line);
 border-radius:var(--radius);
 padding:18px;
-box-shadow: var(--shadow);
+box-shadow:var(--shadow);
 }
-.card h3{margin:0 0 10px;font-size:16px}
-.infoList{margin:0;padding-left:18px;color:var(--ink)}
-.infoList li{margin:8px 0}
-.kv{
+
+.meta{
 list-style:none;margin:0;padding:0;
 display:grid;gap:10px
 }
-.kv li{
-display:flex;gap:10px;justify-content:space-between;
-padding:10px 12px;border:1px solid var(--line);
-border-radius:12px;background:#fff;font-size:14px
+.meta li{
+display:flex;justify-content:space-between;
+padding:10px 12px;
+border:1px solid var(--line);
+border-radius:12px;
+font-size:14px;
 }
-.kv .k{color:var(--muted);font-weight:700}
-.kv .v{font-weight:750}
+.meta strong{color:var(--muted)}
 
+section{margin-top:36px}
+.sectionTitle{
+font-size:22px;
+border-bottom:2px solid #111;
+display:inline-block;
+padding-bottom:4px;
+margin-bottom:10px;
+}
+.sectionDesc{
+color:var(--muted);
+max-width:85ch;
+margin-bottom:16px;
+}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+ul{margin:0;padding-left:18px}
+li{margin:8px 0}
+
+/* FORM */
 form label{display:block;font-weight:700;margin:10px 0 6px}
 input,select,textarea{
-width:100%;padding:12px 12px;border-radius:12px;
-border:1px solid var(--line);background:#fff;
+width:100%;padding:12px;
+border-radius:12px;
+border:1px solid var(--line);
 font:inherit;
 }
-textarea{min-height:120px;resize:vertical}
+textarea{min-height:120px}
 .formRow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.submitRow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
-.hint{color:var(--muted);font-size:13px;line-height:1.5}
+.submitRow{margin-top:14px}
 
 footer{
 border-top:1px solid var(--line);
-background:#fff;
-color:var(--muted);
-padding:20px 0;
-font-size:13px;
+background:#fff;color:var(--muted);
+padding:20px 0;font-size:13px;
 }
 
-@media (max-width: 900px){
-.heroGrid{grid-template-columns:1fr}
+@media (max-width:900px){
+.hero{grid-template-columns:1fr}
 .grid2{grid-template-columns:1fr}
 h1{font-size:34px}
-nav.primary{justify-content:flex-start}
-.brand img{width:120px}
+.brand img{width:130px}
 .formRow{grid-template-columns:1fr}
 }
 </style>
@@ -178,113 +170,73 @@ nav.primary{justify-content:flex-start}
 <div class="wrap topbar">
 <div class="brand">
 <img src="./assets/logo.png" alt="Wisely Clean Government Services logo">
-<div class="text">
+<div>
 <p class="name">Wisely Clean Government Services LLC</p>
 <p class="sub">Janitorial • Sanitation • Facility Support • Supplies</p>
 </div>
 </div>
 
-<!-- ✅ These are IN-PAGE anchors, so they must match section IDs below -->
-<nav class="primary" aria-label="Primary">
-<a class="pill" href="#about">About</a>
-<a class="pill" href="#capabilities">Capabilities</a>
-<a class="pill" href="#company">Company Data</a>
-<a class="pill" href="#rfq">Request a Quote</a>
-<a class="pill" href="#contact">Contact</a>
+<nav class="primary">
+<a href="#about">About</a>
+<a href="#capabilities">Capabilities</a>
+<a href="#company">Company Data</a>
+<a href="#rfq">Request a Quote</a>
+<a href="#contact">Contact</a>
 </nav>
 </div>
 </header>
 
 <main class="wrap">
-<!-- HERO -->
-<div class="hero">
-<div class="heroGrid">
-<div>
-<h1>Professional Janitorial & Facility Services<br/>for Public Agencies</h1>
 
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Contract-Ready Janitorial & Facility Services<br>for Public Agencies</h1>
 <p class="lead">
-Wisely Clean Government Services LLC provides janitorial, sanitation, and facility cleaning services
-to federal, state, and local agencies with a focus on reliability, compliance, and scalable delivery.
+Wisely Clean Government Services LLC delivers reliable, compliant janitorial
+and sanitation services for federal, state, and local government facilities.
 </p>
 
 <div class="actions">
 <a class="btn" href="./assets/WiselyClean-CapabilityStatement.pdf" download>
-Download Capability Statement (PDF)
+Download Capability Statement
 </a>
 <a class="btn secondary" href="./capabilities.html">
-View Full Capability Statement Page
+View Capability Page
 </a>
 </div>
-
-<div class="chipRow">
-<span class="chip">SAM.gov: Active</span>
-<span class="chip">UEI: NETGNWBHBBP5</span>
-<span class="chip">CAGE: 18LE9</span>
-<span class="chip">Phone: 810-276-0948</span>
-</div>
 </div>
 
-<aside class="heroCard" aria-label="Quick facts">
-<h3>Quick Facts</h3>
+<aside class="card">
 <ul class="meta">
-<li><strong>Entity</strong><span>Wisely Clean Government Services LLC</span></li>
-<li><strong>NAICS</strong><span>561720 — Janitorial Services</span></li>
 <li><strong>SAM.gov</strong><span>Active</span></li>
 <li><strong>UEI</strong><span>NETGNWBHBBP5</span></li>
 <li><strong>CAGE</strong><span>18LE9</span></li>
-<li><strong>Primary Email</strong><span>contracts@wiselycleangov.com</span></li>
+<li><strong>Primary NAICS</strong><span>561720</span></li>
+<li><strong>Phone</strong><span>810-276-0948</span></li>
 </ul>
 </aside>
-</div>
-</div>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
-<h2 class="sectionTitle">About Us</h2>
+<h2 class="sectionTitle">About</h2>
 <p class="sectionDesc">
-Wisely Clean Government Services LLC delivers janitorial and facility cleaning services with a compliance-first approach.
-We support agencies and facilities with dependable scheduling, documentation, and scalable workforce capability.
+We provide professional janitorial, sanitation, and facility support services
+with a compliance-first approach designed for government procurement.
 </p>
+</section>
 
-<div class="grid2">
+<!-- CAPABILITIES -->
+<section id="capabilities">
+<h2 class="sectionTitle">Core Capabilities</h2>
 <div class="card">
-<h3>Service Focus</h3>
-<ul class="infoList">
+<ul>
 <li>Government & municipal janitorial services</li>
 <li>Facility cleaning & sanitation support</li>
 <li>Restroom and high-traffic maintenance</li>
-<li>On-demand and scheduled service plans</li>
-<li>Post-event, emergency, and deep cleaning support</li>
-</ul>
-</div>
-<div class="card">
-<h3>Operating Standard</h3>
-<ul class="infoList">
-<li>Compliance-driven cleaning practices</li>
-<li>Professional reporting & documentation</li>
-<li>Responsive communication & performance accountability</li>
-<li>Scalable staffing model through vetted partnerships</li>
-<li>Nationwide service coverage (as contracted)</li>
-</ul>
-</div>
-</div>
-</section>
-
-<!-- CAPABILITIES (SUMMARY) -->
-<section id="capabilities">
-<h2 class="sectionTitle">Core Capabilities</h2>
-<p class="sectionDesc">
-The following capabilities are available for public agencies and partner vendors. For the full capability statement,
-view the dedicated page or download the PDF above.
-</p>
-
-<div class="card">
-<ul class="infoList">
-<li>Janitorial services (daily, weekly, and custom schedules)</li>
-<li>Disinfection & sanitation services</li>
-<li>Restroom hygiene programs & high-traffic area maintenance</li>
-<li>Office, administrative, and facility cleaning</li>
-<li>Facility support & on-call cleaning support</li>
+<li>Scheduled and on-demand cleaning</li>
+<li>Supply fulfillment via authorized distributors</li>
 </ul>
 </div>
 </section>
@@ -292,170 +244,79 @@ view the dedicated page or download the PDF above.
 <!-- COMPANY DATA -->
 <section id="company">
 <h2 class="sectionTitle">Company Data</h2>
-<p class="sectionDesc">Registration and capability details for procurement and vendor onboarding.</p>
-
 <div class="grid2">
 <div class="card">
-<h3>Company Details</h3>
-<ul class="kv">
-<li><span class="k">Legal Entity</span><span class="v">Wisely Clean Government Services LLC</span></li>
-<li><span class="k">SAM.gov Status</span><span class="v">Active</span></li>
-<li><span class="k">UEI</span><span class="v">NETGNWBHBBP5</span></li>
-<li><span class="k">CAGE Code</span><span class="v">18LE9</span></li>
-<li><span class="k">Primary NAICS</span><span class="v">561720 — Janitorial Services</span></li>
-<li><span class="k">Service Area</span><span class="v">Nationwide (U.S.)</span></li>
+<ul>
+<li><strong>Legal Entity:</strong> Wisely Clean Government Services LLC</li>
+<li><strong>SAM.gov:</strong> Active</li>
+<li><strong>UEI:</strong> NETGNWBHBBP5</li>
+<li><strong>CAGE:</strong> 18LE9</li>
+<li><strong>Primary NAICS:</strong> 561720</li>
 </ul>
 </div>
-
 <div class="card">
-<h3>Contact Information</h3>
-<ul class="kv">
-<li><span class="k">Phone</span><span class="v">810-276-0948</span></li>
-<li><span class="k">Email (Contracts)</span><span class="v">contracts@wiselycleangov.com</span></li>
-<li><span class="k">Email (Billing)</span><span class="v">billing@wiselycleangov.com</span></li>
-<li><span class="k">Website</span><span class="v">wiselycleangov.com</span></li>
+<ul>
+<li><strong>Service Area:</strong> Nationwide (U.S.)</li>
+<li><strong>Contracts Email:</strong> contracts@wiselycleangov.com</li>
+<li><strong>Billing Email:</strong> billing@wiselycleangov.com</li>
+<li><strong>Website:</strong> wiselycleangov.com</li>
 </ul>
 </div>
 </div>
 </section>
 
-<!-- NAICS LIST -->
-<section id="naics">
-<h2 class="sectionTitle">NAICS Codes</h2>
-<p class="sectionDesc">
-Wisely Clean Government Services LLC supports services and supply fulfillment through authorized distributor and manufacturer partnerships.
-</p>
-
-<div class="card">
-<ul class="infoList">
-<li><strong>561720</strong> — Janitorial Services (Primary)</li>
-<li><strong>561740</strong> — Carpet and Upholstery Cleaning Services</li>
-<li><strong>561790</strong> — Other Services to Buildings and Dwellings</li>
-<li><strong>561210</strong> — Facilities Support Services</li>
-<li><strong>561110</strong> — Office Administrative Services</li>
-<li><strong>423850</strong> — Service Establishment Equipment & Supplies Merchant Wholesalers</li>
-</ul>
-</div>
-</section>
-
-<!-- PRODUCTS (SAFE LANGUAGE) -->
-<section id="products">
-<h2 class="sectionTitle">Products & Supply Support</h2>
-<p class="sectionDesc">
-We provide janitorial and facility supplies through authorized distributor and manufacturer partnerships. Products may be fulfilled direct-to-site or bundled within service contracts based on customer requirements.
-</p>
-
-<div class="card">
-<ul class="infoList">
-<li>Restroom consumables: paper products, liners, soaps, dispensers (as specified)</li>
-<li>Cleaning chemicals and disinfectants (as specified)</li>
-<li>Floor care supplies and consumables</li>
-<li>PPE and facility maintenance consumables</li>
-<li>Availability, pricing, and lead times determined per contract requirements</li>
-</ul>
-</div>
-</section>
-
-<!-- PRIME / SUB CONTRACTING -->
-<section id="partners">
-<h2 class="sectionTitle">Prime & Subcontracting Opportunities</h2>
-<p class="sectionDesc">
-We partner with prime contractors, facility management firms, and government vendors to support janitorial and supply scopes nationwide.
-</p>
-
-<div class="card">
-<ul class="infoList">
-<li>Available for federal, state, and local subcontracting</li>
-<li>Scalable labor and supply support aligned to contract timelines</li>
-<li>Compliance-driven service delivery and documentation</li>
-<li>Open to teaming agreements and long-term partnerships</li>
-</ul>
-</div>
-</section>
-
-<!-- SPECIALIZED (HOSPITALS + SCHOOLS) -->
-<section id="specialized">
-<h2 class="sectionTitle">Specialized Facility Support</h2>
-<p class="sectionDesc">
-Services are tailored to facilities with heightened sanitation, safety, and compliance requirements.
-</p>
-
-<div class="grid2">
-<div class="card">
-<h3>Healthcare & Hospitals</h3>
-<ul class="infoList">
-<li>High-touch surface disinfection</li>
-<li>Restroom hygiene and consumables support</li>
-<li>Patient and staff area sanitation support</li>
-<li>Compliance-driven cleaning practices</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Schools & Educational Facilities</h3>
-<ul class="infoList">
-<li>Classrooms, corridors, and common areas</li>
-<li>Restroom sanitation and supply management</li>
-<li>After-hours and scheduled plans</li>
-<li>Student-safe cleaning approach</li>
-</ul>
-</div>
-</div>
-</section>
-
-<!-- RFQ (REQUEST A QUOTE) -->
+<!-- RFQ FORM (FORMSPREE – FINAL) -->
 <section id="rfq">
 <h2 class="sectionTitle">Request a Quote (RFQ)</h2>
 <p class="sectionDesc">
-Use the form below to request pricing, availability, or a capability package. This sends directly to our contracts email.
+Submit your request securely. All RFQs are delivered directly to our contracts team.
 </p>
 
 <div class="card">
-<form action="mailto:contracts@wiselycleangov.com" method="post" enctype="text/plain">
+<form action="https://formspree.io/f/xojlgnbd" method="POST">
+<input type="hidden" name="_subject" value="New RFQ – Wisely Clean Government Services LLC">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+
 <div class="formRow">
 <div>
-<label>Organization / Agency Name</label>
-<input type="text" name="Organization" required />
+<label>Organization / Agency</label>
+<input type="text" name="organization" required>
 </div>
 <div>
 <label>Contact Name</label>
-<input type="text" name="ContactName" required />
+<input type="text" name="contact_name" required>
 </div>
 </div>
 
 <div class="formRow">
 <div>
 <label>Email</label>
-<input type="email" name="Email" required />
+<input type="email" name="email" required>
 </div>
 <div>
 <label>Phone (optional)</label>
-<input type="tel" name="Phone" />
+<input type="tel" name="phone">
 </div>
 </div>
 
 <label>Facility Type</label>
-<select name="FacilityType" required>
-<option value="">Select...</option>
+<select name="facility_type" required>
+<option value="">Select…</option>
 <option>Government / Municipal</option>
 <option>Healthcare / Hospital</option>
 <option>School / Education</option>
 <option>Hotel / Hospitality</option>
-<option>Office / Administrative</option>
+<option>Office / Commercial</option>
 <option>Other</option>
 </select>
 
-<label>Requested Service / Supplies</label>
-<textarea name="RequestDetails" placeholder="Describe scope, frequency, square footage (if known), location, and any compliance requirements." required></textarea>
+<label>Scope / Details</label>
+<textarea name="details" required></textarea>
 
 <div class="submitRow">
-<button class="btn" type="submit">Send Request</button>
-<a class="btn secondary" href="./assets/WiselyClean-CapabilityStatement.pdf" download>Download Capability Statement</a>
+<button class="btn" type="submit">Submit RFQ Securely</button>
 </div>
-
-<p class="hint">
-Note: This form opens your email client to send the request. If you prefer, email directly at <strong>contracts@wiselycleangov.com</strong>.
-</p>
 </form>
 </div>
 </section>
@@ -463,35 +324,21 @@ Note: This form opens your email client to send the request. If you prefer, emai
 <!-- CONTACT -->
 <section id="contact">
 <h2 class="sectionTitle">Contact</h2>
-<p class="sectionDesc">For contracts, teaming, onboarding, and vendor setup.</p>
-
-<div class="grid2">
 <div class="card">
-<h3>Direct Contact</h3>
-<ul class="kv">
-<li><span class="k">Company</span><span class="v">Wisely Clean Government Services LLC</span></li>
-<li><span class="k">Phone</span><span class="v">810-276-0948</span></li>
-<li><span class="k">Contracts</span><span class="v">contracts@wiselycleangov.com</span></li>
-<li><span class="k">Billing</span><span class="v">billing@wiselycleangov.com</span></li>
-<li><span class="k">Website</span><span class="v">wiselycleangov.com</span></li>
-</ul>
-</div>
-<div class="card">
-<h3>Identifiers</h3>
-<ul class="kv">
-<li><span class="k">SAM.gov</span><span class="v">Active</span></li>
-<li><span class="k">UEI</span><span class="v">NETGNWBHBBP5</span></li>
-<li><span class="k">CAGE</span><span class="v">18LE9</span></li>
-<li><span class="k">Primary NAICS</span><span class="v">561720</span></li>
-</ul>
-</div>
+<p>
+<strong>Wisely Clean Government Services LLC</strong><br>
+Phone: 810-276-0948<br>
+Contracts: contracts@wiselycleangov.com<br>
+Billing: billing@wiselycleangov.com
+</p>
 </div>
 </section>
+
 </main>
 
 <footer>
 <div class="wrap">
-© <span id="year"></span> Wisely Clean Government Services LLC • All rights reserved
+© <span id="year"></span> Wisely Clean Government Services LLC
 </div>
 </footer>
 
@@ -500,3 +347,4 @@ document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
+
