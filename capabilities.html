@@ -1,12 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<!-- SEO -->
 <title>Capability Statement | Wisely Clean Government Services LLC</title>
-<meta name="description" content="Capability Statement for Wisely Clean Government Services LLC. Government facility cleaning, janitorial, disinfection, and restroom services. UEI NETGNWBHBBP5. CAGE 18LE9." />
+<meta name="description" content="Capability statement for Wisely Clean Government Services LLC. Government, institutional, and commercial janitorial, sanitation, disinfection, and post-construction cleaning services nationwide. UEI NETGNWBHBBP5 | CAGE 18LE9." />
+<meta name="keywords" content="Wisely Clean, capability statement, government janitorial services, institutional cleaning, sanitation, disinfection, post construction cleaning, facilities support services" />
+<meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://wiselycleangov.com/capabilities.html" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Capability Statement | Wisely Clean Government Services LLC" />
+<meta property="og:description" content="Government and institutional facility cleaning services nationwide. UEI NETGNWBHBBP5 | CAGE 18LE9." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://wiselycleangov.com/capabilities.html" />
 
 <style>
 :root{
@@ -15,108 +24,116 @@
 --ink:#0f172a;
 --muted:#475569;
 --line:#e5e7eb;
---brand:#0b2a4a;
---brand2:#0f3b67;
---shadow: 0 10px 30px rgba(2,6,23,.08);
---radius: 16px;
---max: 1100px;
+--pill:#eef2ff;
+--btn:#0f172a;
+--btnText:#ffffff;
+--radius:16px;
+--shadow:0 10px 25px rgba(0,0,0,.08);
+--max:1100px;
 }
 *{box-sizing:border-box}
 body{
 margin:0;
-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+background:linear-gradient(180deg,#f8fafc,#f1f5f9);
 color:var(--ink);
-background: radial-gradient(1200px 600px at 20% -10%, #eef2ff, transparent 60%),
-radial-gradient(900px 500px at 80% 0%, #e0f2fe, transparent 55%),
-var(--bg);
 }
-a{color:var(--brand2); text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:var(--max); margin:0 auto; padding: 0 18px}
+.wrap{max-width:var(--max);margin:0 auto;padding:24px}
 header{
-position: sticky; top:0; z-index:50;
-backdrop-filter: blur(10px);
-background: rgba(246,247,251,.75);
-border-bottom: 1px solid rgba(229,231,235,.7);
+position:sticky;top:0;
+background:rgba(248,250,252,.95);
+border-bottom:1px solid var(--line);
+z-index:10;
 }
 .topbar{
-display:flex; align-items:center; justify-content:space-between;
-gap:16px;
-padding: 12px 0;
+display:flex; justify-content:space-between; align-items:center;
+gap:16px; flex-wrap:wrap;
 }
-.brand{display:flex; align-items:center; gap:14px;}
-.brand img{
-width: 140px;
-height:auto;
-border-radius: 10px;
-box-shadow: 0 6px 18px rgba(2,6,23,.10);
-background:#fff;
-}
-.brand .name{margin:0; font-weight:800}
-.brand .sub{margin:2px 0 0; color:var(--muted); font-weight:600}
-nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+.brand{display:flex; gap:16px; align-items:center;}
+.brand img{width:160px; height:auto;}
+.brand .name{font-weight:800;font-size:22px;margin:0}
+.brand .sub{margin:4px 0 0;color:var(--muted);font-size:14px}
+nav.primary{display:flex; gap:10px; flex-wrap:wrap;}
 .pill{
-display:inline-flex; align-items:center; justify-content:center;
 padding:10px 14px;
 border-radius:999px;
-background: rgba(255,255,255,.65);
-border: 1px solid rgba(229,231,235,.9);
-color: var(--ink);
+background:var(--pill);
+border:1px solid #dbeafe;
+font-weight:600;
+font-size:14px;
+text-decoration:none;
+color:var(--ink);
+}
+main{padding:30px 0}
+.hero{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:28px;
+margin-bottom:22px;
+}
+h1{font-size:38px;margin:0 0 10px;line-height:1.1}
+.lead{color:var(--muted);font-size:16px;line-height:1.6;max-width:900px}
+.ctaRow{display:flex; gap:14px; flex-wrap:wrap; margin-top:16px}
+.btn{
+background:var(--btn);
+color:var(--btnText);
+padding:12px 16px;
+border-radius:12px;
 font-weight:700;
-box-shadow: 0 8px 20px rgba(2,6,23,.05);
+display:inline-block;
+text-decoration:none;
 }
-main{padding: 22px 0 70px}
-h1{margin: 10px 0 10px; font-size: 36px; letter-spacing:-.4px}
-.lead{color:var(--muted); line-height:1.55; margin:0 0 14px}
-.grid2{display:grid; grid-template-columns: 1fr 1fr; gap:16px}
-@media (max-width: 920px){ .grid2{grid-template-columns:1fr} nav{justify-content:flex-start} }
+.btn.secondary{
+background:#fff;
+color:var(--ink);
+border:1px solid var(--line);
+}
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
 .card{
-background: rgba(255,255,255,.78);
-border: 1px solid rgba(229,231,235,.9);
-border-radius: var(--radius);
-box-shadow: var(--shadow);
-padding: 16px;
+background:var(--card);
+border:1px solid var(--line);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:22px;
 }
-.sectionTitle{
-font-size: 18px;
-margin: 0 0 10px;
-padding-bottom: 10px;
-border-bottom: 1px solid rgba(229,231,235,.9);
-}
-ul{margin: 10px 0 0; color: var(--muted); line-height: 1.55}
-table{
+h2{margin:0 0 10px}
+ul{padding-left:18px; line-height:1.7; color:var(--muted); margin:0}
+.meta{font-size:13px;color:var(--muted);margin-top:10px}
+.table{
 width:100%;
 border-collapse:collapse;
-background:#fff;
-border: 1px solid rgba(229,231,235,.9);
-border-radius: 12px;
+margin-top:8px;
+border:1px solid var(--line);
+border-radius:12px;
 overflow:hidden;
 }
-th, td{padding:12px; border-bottom:1px solid rgba(229,231,235,.9); text-align:left}
-th{background:#f8fafc; color:var(--muted); font-weight:900}
-tr:last-child td{border-bottom:none}
-.ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin: 10px 0 0}
-.btn{
-display:inline-flex; align-items:center; justify-content:center;
-padding: 12px 14px;
-border-radius: 12px;
-border: 1px solid rgba(2,6,23,.12);
-background: #fff;
+.table th,.table td{
+padding:10px 10px;
+border-bottom:1px solid var(--line);
+text-align:left;
+font-size:14px;
+}
+.table th{
+background:#f3f6fb;
+color:var(--muted);
+font-size:13px;
 font-weight:800;
-box-shadow: var(--shadow);
-color: var(--ink);
 }
-.btn.primary{
-background: linear-gradient(180deg, var(--brand2), var(--brand));
-color:#fff;
-border-color: rgba(255,255,255,.20);
+.table tr:last-child td{border-bottom:none}
+footer{
+border-top:1px solid var(--line);
+margin-top:40px;
+padding:20px 0;
+color:var(--muted);
+font-size:13px;
+text-align:center;
 }
-.footer{
-margin-top: 18px;
-padding-top: 14px;
-border-top: 1px solid rgba(229,231,235,.9);
-color: var(--muted);
-font-size: 13px;
+@media(max-width:900px){
+.grid{grid-template-columns:1fr}
+h1{font-size:32px}
+.brand img{width:135px}
 }
 </style>
 </head>
@@ -128,12 +145,14 @@ font-size: 13px;
 <img src="./assets/logo.png" alt="Wisely Clean Government Services logo">
 <div>
 <p class="name">Wisely Clean Government Services LLC</p>
-<p class="sub">Government Facility Cleaning • Janitorial • Disinfection • Restroom Services</p>
+<p class="sub">Capability Statement • Government & Institutional Facility Cleaning</p>
 </div>
 </div>
-<nav aria-label="Primary">
+
+<nav class="primary" aria-label="Primary">
 <a class="pill" href="index.html">Home</a>
-<a class="pill" href="index.html#company">Company Data</a>
+<a class="pill" href="services.html">Services & Supplies</a>
+<a class="pill" href="products.html">Products</a>
 <a class="pill" href="index.html#rfq">Request a Quote</a>
 <a class="pill" href="index.html#contact">Contact</a>
 </nav>
@@ -141,76 +160,108 @@ font-size: 13px;
 </header>
 
 <main class="wrap">
+
+<section class="hero">
 <h1>Capability Statement</h1>
 <p class="lead">
-Wisely Clean Government Services LLC provides professional janitorial, sanitation, and facility cleaning services
-to federal, state, and local agencies with a focus on reliability, compliance, and scalable delivery.
+Wisely Clean Government Services LLC provides government, institutional, and commercial facility cleaning services
+nationwide. We deliver consistent janitorial support, sanitation and disinfection, and post-construction cleaning
+aligned to scope requirements.
 </p>
 
 <div class="ctaRow">
-<a class="btn primary" href="./WiselyClean-CapabilityStatement.pdf">Download PDF</a>
 <a class="btn" href="index.html#rfq">Request a Quote</a>
+<a class="btn secondary" href="./WiselyClean-CapabilityStatement.pdf" target="_blank" rel="noopener">Download PDF</a>
 </div>
 
-<section class="grid2" style="margin-top:16px;">
+<p class="meta">
+UEI: <strong>NETGNWBHBBP5</strong> &nbsp;•&nbsp; CAGE: <strong>18LE9</strong> &nbsp;•&nbsp; SAM.gov Status: <strong>Active</strong>
+</p>
+</section>
+
+<section class="grid">
 <div class="card">
-<h2 class="sectionTitle">Core Competencies</h2>
+<h2>Core Competencies</h2>
 <ul>
-<li>Government & municipal facility cleaning</li>
-<li>Janitorial & day porter services</li>
-<li>Disinfection & sanitation services</li>
-<li>Restroom & high-traffic area maintenance</li>
-<li>Scheduled & on-demand cleaning contracts</li>
-<li>Post-disaster & emergency facility cleaning</li>
+<li>Government & institutional janitorial / custodial services</li>
+<li>Sanitation & disinfection services (high-touch protocols as specified)</li>
+<li>Restroom and high-traffic area maintenance</li>
+<li>Floor care support (strip/wax, burnish, detailing as scoped)</li>
+<li>Carpet & upholstery cleaning</li>
+<li>Post-construction cleanup and final clean</li>
+<li>Facilities support services (as required by scope)</li>
 </ul>
 </div>
 
 <div class="card">
-<h2 class="sectionTitle">Differentiators</h2>
+<h2>Facilities Served</h2>
 <ul>
-<li>Contract-ready operational structure</li>
-<li>Compliance-driven cleaning standards</li>
-<li>Scalable workforce capability</li>
-<li>Professional documentation & reporting</li>
-<li>Restroom hygiene focus & supply coordination</li>
+<li>Government & municipal buildings</li>
+<li>Hospitals & healthcare facilities</li>
+<li>Schools & educational institutions</li>
+<li>Hotels & hospitality facilities</li>
+<li>Restaurants & food service facilities</li>
+<li>Retail & commercial properties</li>
+<li>Post-construction & turnover projects</li>
 </ul>
 </div>
 </section>
 
-<section class="grid2" style="margin-top:16px;">
+<section class="grid" style="margin-top:20px;">
 <div class="card">
-<h2 class="sectionTitle">Past Performance</h2>
+<h2>Differentiators</h2>
 <ul>
-<li>Commercial & facility cleaning services</li>
-<li>Janitorial & sanitation support</li>
-<li>Office & property maintenance</li>
+<li>Scope-aligned service delivery and scheduling</li>
+<li>Quality control checklists and reporting (as required)</li>
+<li>Responsive communication and contract support</li>
+<li>Scalable staffing approach for multi-site work</li>
+<li>Supply sourcing support through approved partners (as scoped)</li>
 </ul>
-<p class="footer">References available upon request.</p>
 </div>
 
 <div class="card">
-<h2 class="sectionTitle">Company Data</h2>
-<table aria-label="Company Data">
-<thead>
-<tr><th colspan="2">Business Identifiers</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Legal Entity</strong></td><td>Wisely Clean Government Services LLC</td></tr>
-<tr><td><strong>SAM.gov Status</strong></td><td>Active</td></tr>
-<tr><td><strong>UEI</strong></td><td>NETGNWBHBBP5</td></tr>
-<tr><td><strong>CAGE Code</strong></td><td>18LE9</td></tr>
-<tr><td><strong>Primary NAICS</strong></td><td>561720 — Janitorial Services</td></tr>
-<tr><td><strong>Additional NAICS</strong></td><td>(Add your additional NAICS list here)</td></tr>
-</tbody>
+<h2>Company Data</h2>
+<ul>
+<li><strong>Legal Entity:</strong> Wisely Clean Government Services LLC</li>
+<li><strong>UEI:</strong> NETGNWBHBBP5</li>
+<li><strong>CAGE:</strong> 18LE9</li>
+<li><strong>Service Area:</strong> Nationwide (U.S.)</li>
+<li><strong>Primary NAICS:</strong> 561720 — Janitorial Services</li>
+</ul>
+</div>
+</section>
+
+<section class="grid" style="margin-top:20px;">
+<div class="card">
+<h2>NAICS Codes</h2>
+<table class="table" aria-label="NAICS Codes">
+<tr><th>NAICS</th><th>Title</th></tr>
+<tr><td><strong>561720</strong></td><td>Janitorial Services (Primary)</td></tr>
+<tr><td>561210</td><td>Facilities Support Services</td></tr>
+<tr><td>561740</td><td>Carpet & Upholstery Cleaning Services</td></tr>
+<tr><td>561790</td><td>Other Services to Buildings and Dwellings</td></tr>
+<tr><td>562998</td><td>All Other Miscellaneous Waste Management Services</td></tr>
 </table>
-
-<div class="footer">
-Contact: <a href="mailto:contracts@wiselycleangov.com">contracts@wiselycleangov.com</a> •
-<a href="tel:+18102760948">810-276-0948</a>
 </div>
+
+<div class="card">
+<h2>PSC Codes</h2>
+<table class="table" aria-label="PSC Codes">
+<tr><th>PSC</th><th>Name</th></tr>
+<tr><td>S201</td><td>Housekeeping — Custodial Janitorial</td></tr>
+<tr><td>S203</td><td>Housekeeping — Food</td></tr>
+<tr><td>S299</td><td>Housekeeping — Other</td></tr>
+</table>
 </div>
 </section>
+
 </main>
+
+<footer>
+© <span id="y"></span> Wisely Clean Government Services LLC
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</footer>
 </body>
 </html>
+
 
